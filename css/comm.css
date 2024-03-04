@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  color: #333;
+  font-size: 15px;
+}
+.wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.top-con {
+  display: flex;
+}
+
+#header {
+  width: 200px;
+  height: calc(100vh - 120px);
+}
+
+#header h1 {
+  padding: 20px 0;
+}
+
+.gnb-1depth li {
+  position: relative;
+}
+
+.gnb-1depth > li > a {
+  display: block;
+  padding: 18px 20px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+  font-weight: 500;
+}
+.gnb-1depth > li:hover > a {
+  background: #1585e4;
+  color: white;
+}
+
+.gnb-1depth > li:hover .gnb-2depth {
+  max-height: 300px;
+}
+
+.gnb-2depth {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  overflow: hidden;
+  max-height: 0;
+  background: #eee;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.gnb-2depth li a {
+  position: relative;
+  display: block;
+  min-width: 150px;
+  padding: 18px;
+}
+
+.gnb-2depth > li:hover > a {
+  background: #7e7e7e;
+  color: white;
+}
+
+.main-con {
+  width: 400px;
+  height: calc(100vh - 120px);
+  padding: 50px 20px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner-img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.arrow {
+  height: 30px;
+}
+
+.notice {
+  padding: 50px 0;
+}
+
+.notice > h2 {
+  width: 100px;
+  background: #1585e4;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 6px 0;
+}
+
+.notice > ul > li {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 13px 5px;
+}
+
+.notice > ul > li:first-child {
+  border-top: 1px solid #1585e4;
+}
+
+.gallery {
+  padding-bottom: 50px;
+}
+
+.gallery > h2 {
+  width: 100px;
+  background: #1585e4;
+  color: white;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 6px 0;
+}
+
+.gall-con {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #1585e4;
+}
+
+.gall-img {
+  width: 50%;
+  text-align: center;
+}
+
+.gall-img > img {
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  gap: 10px;
+}
+
+.link > a {
+  display: block;
+  width: 100%;
+  background: #1585e4;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.slide {
+  width: calc(100% - 200px - 400px);
+  height: calc(100vh - 120px);
+  position: relative;
+  overflow: hidden;
+}
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: left 0.3s;
+}
+.slide li {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  height: 120px;
+  background: rgb(241, 241, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-logo {
+  width: 200px;
+  text-align: center;
+}
+.ft-con {
+  text-align: left;
+  width: calc(100% - 400px);
+  padding: 0 50px;
+}
+.ft-link > a {
+  padding: 0 20px;
+  border-right: 1px solid #7e7e7e;
+}
+.ft-link > a:first-child {
+  padding-left: 0;
+}
+.ft-link > a:last-child {
+  border: none;
+}
+.copy {
+  padding: 10px 0;
+}
+.family {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.family > a {
+  width: 50%;
+  padding: 10px 0;
+}
